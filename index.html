@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="manifest" href="/manifest.json">
     <link rel="shortcut icon" type="image/x-icon" href="img/s&t.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -39,11 +39,7 @@
     <audio autoplay>
         <source src="bgmusic.mp3">
     </audio>
-
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
+    
     <!-- header-->
     <header>
         <div class="header-area ">
@@ -344,10 +340,23 @@
     </div>
 </section>
 <!-- ================ contact section end ================= -->
-
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center">
+                    <!-- <img src="img/banner/flowers.png" alt=""> -->
+                    <h4>As busy as you are we would love to have you at wedding to bless the bride and groom and in order to keep you reminded of the wedding please add the invite to your calendar using following button</h4>
+                    <br/>
+                    <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MXIzNWNzOHM5Nmg3cGZ0cGhuNW5mbWk3dWcga2FwaWxndXB0YTU0N0Bt&amp;tmsrc=kapilgupta547%40gmail.com" class="genric-btn info circle">Add Wedding to Your Calendar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- footer_start -->
 <!-- rsvp -->
-<div class="attending_area" >
+<div class="attending_area" style="margin-top: 100px;">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -389,6 +398,12 @@
     </div>
 </div>
 <!-- / rsvp -->   
+<!-- <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MXIzNWNzOHM5Nmg3cGZ0cGhuNW5mbWk3dWcga2FwaWxndXB0YTU0N0Bt&amp;tmsrc=kapilgupta547%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a> -->
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+</button> -->
 <!-- footer_end -->
 
     <!-- JS here -->
@@ -489,13 +504,38 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-vwxDykDOXzRdZ_fFMViZ5pnKYdWDKYc&amp;callback=initMap">
     </script>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
-<!-- <embed name="myMusic" loop="true" hidden="true" src="bgmusic.mp3"></embed> -->
-    <!-- <audio autoplay hidden>
-        <source src="bgmusic.mp3">
-        <embed src="bgmusic.mp3" autostart="true" loop="true" hidden="true"> 
-    </audio> -->
 
 </body>
-
+<script>
+    if ('serviceWorker' in navigator) {
+       console.log("Will the service worker register?");
+       navigator.serviceWorker.register('service-worker.js')
+         .then(function(reg){
+           console.log("Yes, it did.");
+        }).catch(function(err) {
+           console.log("No it didn't. This happened:", err)
+       });
+    }
+   </script>
 </html>

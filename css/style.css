@@ -1366,7 +1366,9 @@ h3 {
 .program_bg_3 {
   background-image: url(../img/program_details/3.jpeg);
 }
-
+.modal-backdrop {
+  z-index:100;
+}
 /* line 10, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_details_area {
   padding-bottom: 60px;
@@ -2004,12 +2006,14 @@ h3 {
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
 .footer {
   background: #FFFAF2;
+  min-width: 100%;
+  padding-top: 50px;
+  margin-top: 100px !important;
 }
 
 /* line 3, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
 .footer .footer_top {
   text-align: center;
-  padding: 73px 0;
 }
 
 /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
