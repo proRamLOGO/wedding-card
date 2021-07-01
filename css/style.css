@@ -987,7 +987,11 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  /* background-image: url(../img/banner/banner.png); */
+  /* background-image: url(https://robbreport.com/wp-content/uploads/2019/11/gudliya-suite-at-the-city-palace-jaipur-5.jpg); */
+  background-image: url(http://www.manahotels.in/traveller/wp-content/uploads/2014/10/sketch31.jpg);
+  background-image: url(https://thumbs.dreamstime.com/b/indian-wedding-background-14588706.jpg);
+  background-image: url(https://pbs.twimg.com/media/ED80BDSVUAEQcnE.jpg);
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */

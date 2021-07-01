@@ -3,7 +3,9 @@ var VERSION = 'version_01'              // Version of the off-line cache (change
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   '/wedding-card/',                     // If you have separate JS/CSS files,
-  '/wedding-card/index.html'            // add path to those files here
+  '/wedding-card/index.html',            // add path to those files here
+  '/wedding-card/img/s&t.png',            // add path to those files here
+  '/wedding-card/css/styles.css',            // add path to those files here
 ]
 
 // Respond with cached resources
