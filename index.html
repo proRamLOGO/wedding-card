@@ -7,10 +7,11 @@
     <title>Sakshi weds Tarun</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="theme-color" content="#C78665">
     <link rel="manifest" href="/wedding-card/manifest.json">
     <link rel="shortcut icon" type="image/x-icon" href="img/s&t.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="img/s&t192.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -501,8 +502,8 @@
         //     });
         // }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-vwxDykDOXzRdZ_fFMViZ5pnKYdWDKYc&amp;callback=initMap">
-    </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-vwxDykDOXzRdZ_fFMViZ5pnKYdWDKYc&amp;callback=initMap"> -->
+    <!-- </script> -->
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -526,18 +527,13 @@
     </div>
 
 
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/wedding-card/service-worker.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+    </script>
+
 </body>
-<script type="text/javascript">
-    if ('serviceWorker' in navigator) {
-       console.log("Will the service worker register?");
-       navigator.serviceWorker.register('service-worker.js', {
-        scope: '/wedding-card/' // <--- THIS BIT IS REQUIRED
-    })
-         .then(function(reg){
-           console.log("Yes, it did.");
-        }).catch(function(err) {
-           console.log("No it didn't. This happened:", err)
-       });
-    }
-   </script>
 </html>

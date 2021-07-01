@@ -23,8 +23,14 @@
       {
         "src": "img/s&t192.png",
         "type": "image/png",
-        "sizes": "192x192"
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "img/s&t512.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
     ],
-    "start_url": "/wedding-card/?utm_source=launcher"
+    "start_url": "?utm_source=launcher"
   }
