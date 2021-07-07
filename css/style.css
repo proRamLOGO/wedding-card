@@ -2058,6 +2058,7 @@ h3 {
 /* line 27, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
 .footer .copy-right_text .footer_border {
   padding-bottom: 30px;
+  margin-top: -50px !important;
 }
 
 /* line 30, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
@@ -2073,6 +2074,7 @@ h3 {
   /* line 30, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_footer.scss */
   .footer .copy-right_text .copy_right {
     font-size: 14px;
+    margin-top: 100px !important;
   }
 }
 
